@@ -1,0 +1,55 @@
+ <!DOCTYPE html>
+<html>
+<head>
+    <title>My Form</title>
+    <style>
+        body {
+            background-image: url('photo_2025-10-31_03-34-46.jpg');
+            background-size: cover;
+            text-align: center;
+            font-family: Arial, sans-serif;
+        }
+        input, button {
+            margin: 5px;
+            padding: 8px;
+        }
+        button {
+            background-color: deepskyblue;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: dodgerblue;
+        }
+    </style>
+</head>
+<body>
+    <h2>WELCOME TO IS SMALL GROUP FAMILY</h2>
+    <h4>TO JOIN OUR TELEGRAM GROUP<br>PLEASE FILL THIS FORM</h4>
+
+    <form onsubmit="window.open(' https://t.me/wkuevacsf', '_blank'); return false;">
+        <label for="FNAME">First name:</label><br>
+        <input type="text" id="FNAME" required><br>
+
+        <label for="LNAME">Last name:</label><br>
+        <input type="text" id="LNAME" required><br>
+
+        <label>Gender:</label><br>
+        Male: <input type="radio" name="gender" value="male" required>
+        Female: <input type="radio" name="gender" value="female" required><br>
+
+        <label for="AGE">Age:</label><br>
+        <input type="number" id="AGE" required><br>
+
+        <label for="EMAIL">Email:</label><br>
+        <input type="email" id="EMAIL" required><br>
+
+        <label for="PASS">Password:</label><br>
+        <input type="password" id="PASS" required><br>
+
+        <button type="submit">SUBMIT</button>
+    </form>
+</body>
+</html>
